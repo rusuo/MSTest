@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Cukerunner" project="marksandspencer" tests="3" started="3" failures="0" errors="0" ignored="3">
+  <testsuite name="com.marksandspencer.app.Cukerunner" time="0.001">
+    <testsuite name="Feature: As a customer, I wish to view the contents of my bag prior to checkout" time="0.001">
+      <testsuite name="Scenario: Add shirt to bag and view bag" time="0.001" incomplete="true">
+        <skipped/>
+        <testcase name="Given I have added a shirt to my bag" classname="Scenario: Add shirt to bag and view bag" time="0.001" ignored="true"/>
+        <testcase name="When I view the contents of my bag" classname="Scenario: Add shirt to bag and view bag" time="0.0" ignored="true"/>
+        <testcase name="Then I can see the contents of the bag include a shirt" classname="Scenario: Add shirt to bag and view bag" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
