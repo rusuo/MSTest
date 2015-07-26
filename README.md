@@ -3,6 +3,9 @@ BDD solution to test M&amp;S website
 
 The project can be cloned from the repository.
 In Eclipse, import the existing Maven project.
+
+The classes can be found under marksandspencer/src/test/java.
+
 To run the project, select the Cukerunner class and run it as a JUnit test.
 
 
