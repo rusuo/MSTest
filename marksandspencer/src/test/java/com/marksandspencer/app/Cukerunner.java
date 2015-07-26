@@ -5,10 +5,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/java/featureFiles"},
-		format = {"pretty",
-				  "html:target/cucumber-html-report",
-				  "junit:target/cucumber-junit-report/allcukes.xml"}
+		features = {"src/test/java/featureFiles"}
 
 )
 
