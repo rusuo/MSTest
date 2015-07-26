@@ -2,7 +2,6 @@ package com.marksandspencer.app;
 
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,9 +12,9 @@ import utility.*;
 
 public class BasketSteps {
 
-	public void setUpWebDriver() throws Exception {
+	public void initializeWebSite() throws Exception {
 		Setup.setUp();
-	    Setup.driver.get(Config.URL);
+		Setup.goToHomePage();
 	}
  
 	public void tidyUp() {
@@ -24,9 +23,9 @@ public class BasketSteps {
 
 	@Given("^I have added \"([^\"]*)\" item to my bag$")
 	public void I_have_added_item_to_my_bag(String itemToSearchFor) throws Throwable {
-		 setUpWebDriver();
-		   SearchPage.searchFor(Setup.driver, itemToSearchFor);
-		   IndividualItemPage.addItemToBag(Setup.driver);
+		 initializeWebSite();
+		 SearchPage.searchFor(Setup.driver, itemToSearchFor);
+		 IndividualItemPage.addItemToBag(Setup.driver);
 	}
 
 	@When("^I view the contents of my bag$")
@@ -44,7 +43,5 @@ public class BasketSteps {
 	      }
 		  tidyUp();
 	  }
-
-
 
 }
