@@ -41,6 +41,7 @@ public class IndividualItemPage {
 	        	WebElement size = listOfSizes.get(i);
 	        	if (!size.getAttribute("title").equals("Out of stock")){
 	        		size.findElement(By.xpath(".//label")).click();
+	        		return;
 	        	}
 	        }
 	} 
